@@ -481,86 +481,6 @@ window.betproNative = {$encoded_config};
         }, 6800);
     }
 
-    function initLiveSalesCounter() {
-        var panel = document.querySelector('[data-betpro-live-sales]');
-
-        if (! panel) {
-            return;
-        }
-
-        var numberNodes = Array.prototype.slice.call(panel.querySelectorAll('[data-betpro-live-number]'));
-        var progressNode = panel.querySelector('[data-betpro-live-progress]');
-        var progressLabelNode = panel.querySelector('[data-betpro-live-progress-label]');
-        var statusNode = panel.querySelector('[data-betpro-live-status]');
-        var clockNode = panel.querySelector('[data-betpro-live-clock]');
-        var statuses = [
-            'One BetPro order cleared checks and moved to delivery 4 minutes ago.',
-            'Support wrapped up a verified account handover for a returning customer.',
-            'A fresh WhatsApp order just entered the verification queue.',
-            'Another completed account was released to the delivery desk.'
-        ];
-        var statusIndex = -1;
-        var currentValues = numberNodes.map(function (node) {
-            var initial = parseInt(node.textContent || node.getAttribute('data-base') || '0', 10);
-            return Number.isNaN(initial) ? 0 : initial;
-        });
-
-        function randomBetween(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        function clamp(value, min, max) {
-            return Math.max(min, Math.min(max, value));
-        }
-
-        function setClockLabel() {
-            if (! clockNode) {
-                return;
-            }
-
-            clockNode.textContent = 'Updated just now';
-        }
-
-        function refreshCounters() {
-            var soldToday = 0;
-            var deliveredToday = 0;
-
-            numberNodes.forEach(function (node, index) {
-                var min = parseInt(node.getAttribute('data-min') || '0', 10);
-                var max = parseInt(node.getAttribute('data-max') || '0', 10);
-                var nextValue = currentValues[index] || min;
-
-                if (index === 0) {
-                    nextValue = clamp(nextValue + randomBetween(0, 1), min, max);
-                    soldToday = nextValue;
-                } else if (index === 1 || index === 2) {
-                    nextValue = clamp(nextValue + randomBetween(-1, 1), min, max);
-                } else {
-                    nextValue = clamp(soldToday - randomBetween(1, 3), min, max);
-                    deliveredToday = nextValue;
-                }
-
-                currentValues[index] = nextValue;
-                node.textContent = String(nextValue);
-            });
-
-            if (progressNode && progressLabelNode) {
-                var percent = Math.max(52, Math.min(97, Math.round((deliveredToday / 24) * 100)));
-                progressNode.style.width = percent + '%';
-                progressLabelNode.textContent = deliveredToday + ' of 24 delivered';
-            }
-
-            if (statusNode) {
-                statusIndex = (statusIndex + 1) % statuses.length;
-                statusNode.textContent = statuses[statusIndex];
-            }
-
-            setClockLabel();
-        }
-
-        refreshCounters();
-        window.setInterval(refreshCounters, 5200);
-    }
 
     function handleContactSubmit(event) {
         var form = event.target;
@@ -626,13 +546,11 @@ window.betproNative = {$encoded_config};
             initReveal();
             initMenu();
             initProofToast();
-            initLiveSalesCounter();
         });
     } else {
         initReveal();
         initMenu();
         initProofToast();
-        initLiveSalesCounter();
     }
 })();
 JS;

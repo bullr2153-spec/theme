@@ -457,9 +457,12 @@
         padding-top: 2.5rem;
     }
 
-    .betpro-site-footer__top,
-    .betpro-site-footer__meta {
+    .betpro-site-footer__top {
         grid-template-columns: 1fr;
+    }
+
+    .betpro-site-footer__meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .betpro-site-footer__top {
@@ -474,6 +477,10 @@
     .betpro-site-footer__actions a {
         justify-content: center;
         width: 100%;
+    }
+
+    .betpro-site-footer__contact {
+        grid-column: 1 / -1;
     }
 
     .betpro-proof-toast {

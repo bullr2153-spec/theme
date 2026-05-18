@@ -28,12 +28,12 @@ if (! defined('ABSPATH')) {
                 </label>
                 <label>
                     <span><?php esc_html_e('Platform', 'betpro-account'); ?></span>
-                    <input type="text" name="platform" placeholder="<?php esc_attr_e('BetPro, Bet365...', 'betpro-account'); ?>" required>
+                    <input type="text" name="platform" placeholder="<?php esc_attr_e('Example: BetPro or Bet365', 'betpro-account'); ?>" required>
                 </label>
             </div>
             <label>
                 <span><?php esc_html_e('Message', 'betpro-account'); ?></span>
-                <textarea name="message" placeholder="<?php esc_attr_e('Tell us the account type, payment method, and timeline you need.', 'betpro-account'); ?>" required></textarea>
+                <textarea name="message" placeholder="<?php esc_attr_e('Tell us what you need (account type, payment method, and timeline).', 'betpro-account'); ?>" required></textarea>
             </label>
             <div class="betpro-contact-form__actions">
                 <button type="submit"><?php esc_html_e('Send Inquiry', 'betpro-account'); ?></button>
