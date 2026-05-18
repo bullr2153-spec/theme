@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+/*
+ * Keep typography reliable even when external font CDNs are blocked.
+ * We intentionally avoid remote @import here and use local/system stacks.
+ */
 
 /* Local Bricolage Grotesque Font */
 @font-face {

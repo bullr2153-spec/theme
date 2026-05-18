@@ -5,7 +5,7 @@
 body.betpro-account-theme {
   --betpro-accent: #f5c518;
   --betpro-accent-text: #111111;
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, ui-sans-serif, system-ui, sans-serif;
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
   line-height: 1.65;
@@ -30,6 +30,12 @@ body.betpro-account-theme p {
   --betpro-accent-text: #111111;
     font-size: 17px;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 640px) {
+  body.betpro-account-theme section.betpro-home-hero[class*='min-h-[92svh]'] {
+    padding-top: 1.5rem !important;
   }
 }
 

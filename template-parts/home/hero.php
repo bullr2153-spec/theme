@@ -24,13 +24,13 @@ $person_image = (string) ($args['person_image'] ?? '');
                     <span class="betpro-home-hero__line text-gradient-green"><?php esc_html_e('ready to use in 24-48 hours', 'betpro-account'); ?></span>
                 </h1>
                 <p class="text-2xl text-muted-foreground mb-9 leading-9 max-w-xl">
-                    <?php esc_html_e('We register the account, finish KYC checks, and hand over a working BetPro login with WhatsApp support. Fast and clear, no waiting in queues.', 'betpro-account'); ?>
+                    <?php esc_html_e('We create your account, finish ID check, and send you a ready-to-use BetPro login with WhatsApp help. Simple process, no long wait.', 'betpro-account'); ?>
                 </p>
                 <div class="betpro-home-hero__actions flex flex-col sm:flex-row gap-4 mb-8">
                     <?php betpro_account_render_button(betpro_account_whatsapp_url(), betpro_account_primary_cta_label(), 'primary', true); ?>
                 </div>
                 <div class="betpro-home-hero__proof grid gap-3 text-lg text-muted-foreground sm:grid-cols-2">
-                    <?php foreach (array('Ready BetPro login', 'Delivered in 24-48 hours', 'KYC support included', 'WhatsApp support available') as $proof) : ?>
+                    <?php foreach (array('Ready BetPro login', 'Delivered in 24-48 hours', 'ID check help included', 'WhatsApp support available') as $proof) : ?>
                         <span><i class="fa-solid fa-check" aria-hidden="true"></i><?php echo esc_html($proof); ?></span>
                     <?php endforeach; ?>
                 </div>

@@ -89,12 +89,12 @@ $support_items = array(
                 </label>
                 <label>
                     <span><?php esc_html_e('Platform Needed', 'betpro-account'); ?></span>
-                    <input type="text" name="platform" placeholder="<?php esc_attr_e('Bet365, Betway, etc.', 'betpro-account'); ?>" required>
+                    <input type="text" name="platform" placeholder="<?php esc_attr_e('Example: BetPro or Bet365', 'betpro-account'); ?>" required>
                 </label>
             </div>
             <label>
                 <span><?php esc_html_e('Message Details', 'betpro-account'); ?></span>
-                <textarea name="message" placeholder="<?php esc_attr_e('Please specify any specific requirements or your estimated monthly volume...', 'betpro-account'); ?>" required></textarea>
+                <textarea name="message" placeholder="<?php esc_attr_e('Tell us what you need in simple words (account type, budget, and deadline).', 'betpro-account'); ?>" required></textarea>
             </label>
             <div class="betpro-contact-form__actions">
                 <button type="submit"><?php esc_html_e('Submit Inquiry', 'betpro-account'); ?> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
