@@ -131,3 +131,52 @@ function betpro_account_render_support_cta(string $heading = '', string $descrip
     </section>
     <?php
 }   
+
+
+function betpro_account_render_schedule_page(): void
+{
+    $today = gmdate('Y-m-d');
+    $fixtures = array(
+        array('date' => '2026-05-18', 'time' => '14:00 PKT', 'tournament' => 'Pakistan Super League 2026', 'match' => 'Lahore Qalandars vs Karachi Kings', 'venue' => 'Gaddafi Stadium, Lahore', 'status' => __('Today', 'betpro-account')),
+        array('date' => '2026-05-18', 'time' => '19:00 PKT', 'tournament' => 'Pakistan Super League 2026', 'match' => 'Multan Sultans vs Peshawar Zalmi', 'venue' => 'Multan Cricket Stadium, Multan', 'status' => __('Today', 'betpro-account')),
+        array('date' => '2026-05-20', 'time' => '15:30 PKT', 'tournament' => 'Bpexch T20 Cup', 'match' => 'Islamabad United vs Quetta Gladiators', 'venue' => 'Rawalpindi Cricket Stadium', 'status' => __('Upcoming', 'betpro-account')),
+        array('date' => '2026-05-22', 'time' => '20:00 PKT', 'tournament' => 'Bpexch ODI Series', 'match' => 'Pakistan vs Sri Lanka', 'venue' => 'National Stadium, Karachi', 'status' => __('Upcoming', 'betpro-account')),
+        array('date' => '2026-05-25', 'time' => '16:00 PKT', 'tournament' => 'BetPro Premium League', 'match' => 'Faisalabad Wolves vs Sialkot Stallions', 'venue' => 'Iqbal Stadium, Faisalabad', 'status' => __('Upcoming', 'betpro-account')),
+    );
+
+    echo '<div class="space-y-8">';
+    echo '<p class="text-muted-foreground text-lg leading-8">' . esc_html__('Track today\'s matches and upcoming BetPro & Bpexch cricket fixtures for Pakistan. Each card includes a direct Bet Now call-to-action.', 'betpro-account') . '</p>';
+    echo '<div class="grid gap-6 md:grid-cols-2">';
+
+    foreach ($fixtures as $fixture) {
+        $is_today = $fixture['date'] === $today || $fixture['status'] === 'Today';
+        echo '<article class="rounded-2xl border border-border bg-card p-6 shadow-sm">';
+        echo '<div class="mb-3 flex items-center justify-between gap-3">';
+        echo '<span class="inline-flex rounded-full px-3 py-1 text-xs font-bold ' . ($is_today ? 'bg-primary text-white' : 'bg-primary/10 text-primary') . '">' . esc_html($fixture['status']) . '</span>';
+        echo '<p class="text-sm font-semibold text-muted-foreground">' . esc_html(date_i18n('F j, Y', strtotime($fixture['date']))) . ' · ' . esc_html($fixture['time']) . '</p>';
+        echo '</div>';
+        echo '<h2 class="mb-2 text-2xl font-extrabold">' . esc_html($fixture['match']) . '</h2>';
+        echo '<p class="mb-2 text-sm font-bold uppercase tracking-widest text-primary">' . esc_html($fixture['tournament']) . '</p>';
+        echo '<p class="mb-5 text-muted-foreground">' . esc_html($fixture['venue']) . '</p>';
+        betpro_account_render_button(betpro_account_whatsapp_url(), __('Bet Now', 'betpro-account'), 'primary', true);
+        echo '</article>';
+    }
+
+    echo '</div></div>';
+}
+
+function betpro_account_render_dealer_cities_page(): void
+{
+    $cities = array('Karachi','Lahore','Faisalabad','Rawalpindi','Multan','Gujranwala','Peshawar','Hyderabad','Islamabad','Quetta','Bahawalpur','Sargodha','Sialkot','Sukkur','Larkana','Sheikhupura','Rahim Yar Khan','Jhang','Dera Ghazi Khan','Gujrat','Sahiwal','Wah Cantonment','Mardan','Kasur','Okara','Mingora','Nawabshah','Chiniot','Kohat','Kamoke','Hafizabad','Sadiqabad','Mirpur Khas','Burewala','Khanewal','Jacobabad','Shikarpur','Muzaffargarh','Khanpur','Gojra','Bahawalnagar','Abbottabad','Muridke','Pakpattan','Khuzdar','Jhelum','Chakwal','Daska','Mandi Bahauddin','Vehari');
+    echo '<div class="space-y-8">';
+    echo '<p class="text-muted-foreground text-lg leading-8">' . esc_html__('Find BetPro dealers across major cities in Pakistan. Contact us for instant account setup, KYC support, and same-day service.', 'betpro-account') . '</p>';
+    echo '<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">';
+    foreach ($cities as $city) {
+        echo '<article class="rounded-xl border border-border bg-card p-5">';
+        echo '<h2 class="mb-2 text-xl font-extrabold">' . esc_html(sprintf(__('BetPro Dealer in %s', 'betpro-account'), $city)) . '</h2>';
+        echo '<p class="mb-4 text-sm text-muted-foreground">' . esc_html__('Verified account support, replacement service, and 24/7 WhatsApp response available.', 'betpro-account') . '</p>';
+        betpro_account_render_button(betpro_account_whatsapp_url(), __('Contact Dealer', 'betpro-account'), 'secondary', true);
+        echo '</article>';
+    }
+    echo '</div></div>';
+}

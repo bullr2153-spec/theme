@@ -13,15 +13,33 @@ while (have_posts()) :
     if ($slug === 'blog') {
         betpro_account_render_page_hero(get_the_title(), get_the_excerpt(), 'blog');
         echo '<section class="betpro-content-section py-16 bg-background"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">';
-        [$blog_query] = betpro_account_query_blog_posts(12);
 
-        if ($blog_query instanceof WP_Query && $blog_query->have_posts()) {
+        $current_page = max(1, (int) get_query_var('paged'), (int) get_query_var('page'));
+        $blog_query = new WP_Query(array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => 12,
+            'paged' => $current_page,
+            'orderby' => 'date',
+            'order' => 'DESC',
+        ));
+
+        if ($blog_query->have_posts()) {
             echo '<div class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">';
             while ($blog_query->have_posts()) {
                 $blog_query->the_post();
                 betpro_account_render_post_card(get_post());
             }
             echo '</div>';
+
+            echo '<div class="mt-12 text-center">';
+            echo wp_kses_post(paginate_links(array(
+                'total' => (int) $blog_query->max_num_pages,
+                'current' => $current_page,
+                'type' => 'list',
+            )));
+            echo '</div>';
+
             wp_reset_postdata();
         } else {
             echo '<p class="text-muted-foreground">' . esc_html__('No blog posts are published yet.', 'betpro-account') . '</p>';
@@ -29,6 +47,24 @@ while (have_posts()) :
 
         echo '</div></section>';
         betpro_account_render_support_cta(__('Need help choosing a platform?', 'betpro-account'), __('Our team can recommend the right account setup based on your country, payment method, and requirements.', 'betpro-account'));
+        continue;
+    }
+
+    if ($slug === 'cricket-schedule-2026') {
+        betpro_account_render_page_hero(get_the_title(), get_the_excerpt(), $slug);
+        echo '<section class="betpro-content-section py-16 bg-background"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">';
+        betpro_account_render_schedule_page();
+        echo '</div></section>';
+        betpro_account_render_support_cta(__('Need a custom match alert?', 'betpro-account'), __('Message us and we will share priority fixture updates and premium BetPro account support.', 'betpro-account'));
+        continue;
+    }
+
+    if ($slug === 'betpro-dealer') {
+        betpro_account_render_page_hero(get_the_title(), get_the_excerpt(), $slug);
+        echo '<section class="betpro-content-section py-16 bg-background"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">';
+        betpro_account_render_dealer_cities_page();
+        echo '</div></section>';
+        betpro_account_render_support_cta(__('Looking for a dealer in your city?', 'betpro-account'), __('Send us your city and we will connect you with the fastest available BetPro dealer support.', 'betpro-account'));
         continue;
     }
 
