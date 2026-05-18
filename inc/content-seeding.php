@@ -213,6 +213,18 @@ function betpro_account_default_pages(): array
             'content' => '',
         ),
         array(
+            'slug' => 'cricket-schedule-2026',
+            'title' => __('Cricket Schedule 2026 – BetPro & Bpexch Match Fixtures', 'betpro-account'),
+            'excerpt' => __('See today matches and upcoming fixtures with Bet Now actions for BetPro Exchange Pakistan.', 'betpro-account'),
+            'content' => '',
+        ),
+        array(
+            'slug' => 'betpro-dealer',
+            'title' => __('BetPro Dealer in Pakistan', 'betpro-account'),
+            'excerpt' => __('Find BetPro dealers in Lahore, Multan, Karachi, and top cities across Pakistan.', 'betpro-account'),
+            'content' => '',
+        ),
+        array(
             'slug' => 'terms-of-service',
             'title' => __('BetPro Account Terms of Service', 'betpro-account'),
             'excerpt' => __('Read the BetPro Account terms before using our verified betting account services.', 'betpro-account'),

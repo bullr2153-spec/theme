@@ -34,7 +34,7 @@ function betpro_account_render_post_card(WP_Post $post): void
     ?>
     <article class="betpro-post-card betpro-reveal group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-transform hover:-translate-y-1" data-betpro-reveal>
         <a href="<?php echo esc_url(get_permalink($post)); ?>" class="betpro-post-card__media block">
-            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(get_the_title($post)); ?>" class="h-52 w-full object-cover" />
+            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(get_the_title($post)); ?>" class="w-full h-auto" />
         </a>
         <div class="betpro-post-card__body p-6">
             <p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary"><?php echo esc_html(get_the_date('F j, Y', $post)); ?></p>
@@ -53,7 +53,7 @@ function betpro_account_render_static_post_card(WP_Post $post): void
     ?>
     <article class="betpro-post-card betpro-reveal group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-transform hover:-translate-y-1" data-betpro-reveal>
         <a href="<?php echo esc_url(get_permalink($post)); ?>" class="betpro-post-card__media block">
-            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(get_the_title($post)); ?>" class="h-52 w-full object-cover" loading="lazy" decoding="async" />
+            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(get_the_title($post)); ?>" class="w-full h-auto" loading="lazy" decoding="async" />
         </a>
         <div class="betpro-post-card__body p-6">
             <p class="mb-3 text-xs font-bold uppercase tracking-widest text-primary"><?php echo esc_html(get_the_date('F j, Y', $post)); ?></p>
