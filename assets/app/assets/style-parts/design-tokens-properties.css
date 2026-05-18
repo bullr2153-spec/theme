@@ -1,0 +1,296 @@
+:root {
+  --background: 222 47% 7%;
+  --foreground: 210 40% 96%;
+  --border: 217 32% 17%;
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 96%;
+  --card-border: 217 32% 20%;
+  --sidebar: 222 47% 9%;
+  --sidebar-foreground: 210 40% 96%;
+  --sidebar-border: 217 32% 17%;
+  --sidebar-primary: 142 71% 45%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 142 71% 15%;
+  --sidebar-accent-foreground: 142 71% 75%;
+  --sidebar-ring: 142 71% 45%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 96%;
+  --popover-border: 217 32% 20%;
+  --primary: 142 71% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 47 93% 53%;
+  --secondary-foreground: 47 93% 10%;
+  --muted: 217 32% 17%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 142 71% 15%;
+  --accent-foreground: 142 71% 75%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --input: 217 32% 17%;
+  --ring: 142 71% 45%;
+  --chart-1: 142 71% 45%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 197 70% 50%;
+  --chart-4: 43 96% 58%;
+  --chart-5: 27 87% 67%;
+  --brand-gradient-start: #4ade80;
+  --brand-gradient-mid: #22c55e;
+  --brand-gradient-end: #15803d;
+  --brand-rgb: 34, 197, 94;
+  --accent-rgb: 245, 158, 11;
+  --page-tone-1: #22c55e14;
+  --page-tone-2: #f59e0b0d;
+  --page-tone-3: #38bdf80a;
+  --radius: 0.75rem;
+  color-scheme: dark;
+}
+.light {
+  --background: 42 30% 96%;
+  --foreground: 162 18% 16%;
+  --border: 34 20% 84%;
+  --card: 48 43% 98%;
+  --card-foreground: 162 18% 16%;
+  --card-border: 34 18% 86%;
+  --sidebar: 42 30% 96%;
+  --sidebar-foreground: 162 18% 16%;
+  --sidebar-border: 34 18% 86%;
+  --sidebar-primary: 156 40% 32%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 42 38% 91%;
+  --sidebar-accent-foreground: 160 22% 22%;
+  --sidebar-ring: 156 40% 32%;
+  --popover: 48 43% 98%;
+  --popover-foreground: 162 18% 16%;
+  --popover-border: 34 18% 86%;
+  --primary: 156 40% 32%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 47 93% 53%;
+  --secondary-foreground: 47 93% 10%;
+  --muted: 42 24% 93%;
+  --muted-foreground: 160 10% 35%;
+  --accent: 42 38% 91%;
+  --accent-foreground: 160 22% 22%;
+  --destructive: 0 72% 52%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 34 18% 86%;
+  --ring: 156 40% 32%;
+  --chart-1: 156 40% 32%;
+  --chart-2: 34 42% 50%;
+  --chart-3: 188 32% 45%;
+  --chart-4: 92 24% 45%;
+  --chart-5: 344 34% 54%;
+  --brand-gradient-start: #356f64;
+  --brand-gradient-mid: #4d8a72;
+  --brand-gradient-end: #b78b4e;
+  --brand-rgb: 77, 138, 114;
+  --accent-rgb: 183, 139, 78;
+  --page-tone-1: #4d8a7217;
+  --page-tone-2: #b78b4e14;
+  --page-tone-3: #8194b00f;
+  color-scheme: light;
+}
+@media screen and (min-width: 768px) {
+  body.betpro-account-theme {
+    --betpro-banner-height: 40px;
+    --betpro-header-height: 80px;
+  }
+}
+@media screen and (max-width: 782px) {
+  body.admin-bar.betpro-account-theme {
+    --betpro-admin-offset: 46px;
+  }
+}
+@property --tw-translate-x {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: '*';
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: '<length-percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: '<length-percentage>';
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: '<length-percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-ring-offset-color {
+  syntax: '*';
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: '*';
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: '*';
+  inherits: false;
+  initial-value: solid;
+}

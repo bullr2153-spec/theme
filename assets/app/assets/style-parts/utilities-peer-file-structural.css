@@ -1,0 +1,99 @@
+@layer utilities {
+  .peer-disabled\:opacity-70:is(:where(.peer):disabled ~ *) {
+    opacity: 0.7;
+  }
+  .peer-data-\[size\=default\]\/menu-button\:top-1\.5:is(
+      :where(.peer\/menu-button)[data-size='default'] ~ *
+    ) {
+    top: calc(var(--spacing) * 1.5);
+  }
+  .peer-data-\[size\=lg\]\/menu-button\:top-2\.5:is(
+      :where(.peer\/menu-button)[data-size='lg'] ~ *
+    ) {
+    top: calc(var(--spacing) * 2.5);
+  }
+  .peer-data-\[size\=sm\]\/menu-button\:top-1:is(:where(.peer\/menu-button)[data-size='sm'] ~ *) {
+    top: calc(var(--spacing) * 1);
+  }
+  .file\:border-0::file-selector-button {
+    border-style: var(--tw-border-style);
+    border-width: 0;
+  }
+  .file\:bg-transparent::file-selector-button {
+    background-color: #0000;
+  }
+  .file\:text-sm::file-selector-button {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .file\:font-medium::file-selector-button {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .file\:text-foreground::file-selector-button {
+    color: hsl(var(--foreground));
+  }
+  .placeholder\:text-muted-foreground::placeholder {
+    color: hsl(var(--muted-foreground));
+  }
+  .after\:absolute:after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  .after\:-inset-2:after {
+    content: var(--tw-content);
+    inset: calc(var(--spacing) * -2);
+  }
+  .after\:inset-y-0:after {
+    content: var(--tw-content);
+    inset-block: calc(var(--spacing) * 0);
+  }
+  .after\:left-1\/2:after {
+    content: var(--tw-content);
+    left: 50%;
+  }
+  .after\:w-1:after {
+    content: var(--tw-content);
+    width: calc(var(--spacing) * 1);
+  }
+  .after\:w-\[2px\]:after {
+    content: var(--tw-content);
+    width: 2px;
+  }
+  .after\:-translate-x-1\/2:after {
+    content: var(--tw-content);
+    --tw-translate-x: -50%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .group-data-\[collapsible\=offcanvas\]\:after\:left-full:is(
+      :where(.group)[data-collapsible='offcanvas'] *
+    ):after {
+    content: var(--tw-content);
+    left: 100%;
+  }
+  .first\:rounded-l-md:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .first\:border-l:first-child {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .last\:mt-0:last-child {
+    margin-top: calc(var(--spacing) * 0);
+  }
+  .last\:mb-0:last-child {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+  .last\:rounded-r-md:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .last\:border-b-0:last-child {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 0;
+  }
+  .last\:pb-0:last-child {
+    padding-bottom: calc(var(--spacing) * 0);
+  }
+}

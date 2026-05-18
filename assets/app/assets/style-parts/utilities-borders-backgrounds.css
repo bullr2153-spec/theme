@@ -1,0 +1,298 @@
+@layer utilities {
+  .\[border-color\:var\(--badge-outline\)\] {
+    border-color: var(--badge-outline);
+  }
+  .\[border-color\:var\(--button-outline\)\] {
+    border-color: var(--button-outline);
+  }
+  .border-\[\#25D366\]\/30 {
+    border-color: #25d3664d;
+  }
+  .border-\[\#0088cc\]\/30 {
+    border-color: #0088cc4d;
+  }
+  .border-\[\#facc15\]\/45 {
+    border-color: #facc1573;
+  }
+  .border-\[--color-border\] {
+    border-color: --color-border;
+  }
+  .border-\[rgba\(77\,138\,114\,0\.12\)\] {
+    border-color: #4d8a721f;
+  }
+  .border-\[rgba\(77\,138\,114\,0\.14\)\] {
+    border-color: #4d8a7224;
+  }
+  .border-\[rgba\(77\,138\,114\,0\.16\)\] {
+    border-color: #4d8a7229;
+  }
+  .border-\[rgba\(77\,138\,114\,0\.18\)\] {
+    border-color: #4d8a722e;
+  }
+  .border-border,
+  .border-border\/50 {
+    border-color: hsl(var(--border));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-border\/50 {
+      border-color: color-mix(in oklab, hsl(var(--border)) 50%, transparent);
+    }
+  }
+  .border-card {
+    border-color: hsl(var(--card));
+  }
+  .border-destructive,
+  .border-destructive\/50 {
+    border-color: hsl(var(--destructive));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-destructive\/50 {
+      border-color: color-mix(in oklab, hsl(var(--destructive)) 50%, transparent);
+    }
+  }
+  .border-input {
+    border-color: hsl(var(--input));
+  }
+  .border-primary,
+  .border-primary\/10 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/10 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 10%, transparent);
+    }
+  }
+  .border-primary\/15 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/15 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 15%, transparent);
+    }
+  }
+  .border-primary\/20 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/20 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 20%, transparent);
+    }
+  }
+  .border-primary\/25 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/25 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 25%, transparent);
+    }
+  }
+  .border-primary\/35 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/35 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 35%, transparent);
+    }
+  }
+  .border-primary\/40 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/40 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 40%, transparent);
+    }
+  }
+  .border-primary\/50 {
+    border-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/50 {
+      border-color: color-mix(in oklab, hsl(var(--primary)) 50%, transparent);
+    }
+  }
+  .border-transparent {
+    border-color: #0000;
+  }
+  .border-white\/5 {
+    border-color: #ffffff0d;
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-white\/5 {
+      border-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .border-white\/8 {
+    border-color: #ffffff14;
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-white\/8 {
+      border-color: color-mix(in oklab, var(--color-white) 8%, transparent);
+    }
+  }
+  .border-white\/10 {
+    border-color: #ffffff1a;
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-white\/10 {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-t-transparent {
+    border-top-color: #0000;
+  }
+  .border-l-transparent {
+    border-left-color: #0000;
+  }
+  .bg-\[\#25D366\] {
+    background-color: #25d366;
+  }
+  .bg-\[\#25D366\]\/10 {
+    background-color: #25d3661a;
+  }
+  .bg-\[\#0088cc\] {
+    background-color: #08c;
+  }
+  .bg-\[\#0088cc\]\/10 {
+    background-color: #0088cc1a;
+  }
+  .bg-\[\#f59e0b\] {
+    background-color: #f59e0b;
+  }
+  .bg-\[--color-bg\] {
+    background-color: --color-bg;
+  }
+  .bg-\[rgba\(255\,252\,247\,0\.88\)\] {
+    background-color: #fffcf7e0;
+  }
+  .bg-accent {
+    background-color: hsl(var(--accent));
+  }
+  .bg-background,
+  .bg-background\/50 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/50 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 50%, transparent);
+    }
+  }
+  .bg-background\/52 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/52 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 52%, transparent);
+    }
+  }
+  .bg-background\/70 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/70 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 70%, transparent);
+    }
+  }
+  .bg-background\/75 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/75 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 75%, transparent);
+    }
+  }
+  .bg-background\/80 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/80 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 80%, transparent);
+    }
+  }
+  .bg-background\/84 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/84 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 84%, transparent);
+    }
+  }
+  .bg-background\/95 {
+    background-color: hsl(var(--background));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background\/95 {
+      background-color: color-mix(in oklab, hsl(var(--background)) 95%, transparent);
+    }
+  }
+  .bg-black\/80 {
+    background-color: #000c;
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-black\/80 {
+      background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+  }
+  .bg-border {
+    background-color: hsl(var(--border));
+  }
+  .bg-card {
+    background-color: hsl(var(--card));
+  }
+  .bg-destructive {
+    background-color: hsl(var(--destructive));
+  }
+  .bg-foreground {
+    background-color: hsl(var(--foreground));
+  }
+  .bg-green-500\/20 {
+    background-color: #00c75833;
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-green-500\/20 {
+      background-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+    }
+  }
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
+  .bg-input {
+    background-color: hsl(var(--input));
+  }
+  .bg-muted,
+  .bg-muted\/50 {
+    background-color: hsl(var(--muted));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-muted\/50 {
+      background-color: color-mix(in oklab, hsl(var(--muted)) 50%, transparent);
+    }
+  }
+  .bg-popover {
+    background-color: hsl(var(--popover));
+  }
+  .bg-primary,
+  .bg-primary\/3 {
+    background-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-primary\/3 {
+      background-color: color-mix(in oklab, hsl(var(--primary)) 3%, transparent);
+    }
+  }
+  .bg-primary\/5 {
+    background-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-primary\/5 {
+      background-color: color-mix(in oklab, hsl(var(--primary)) 5%, transparent);
+    }
+  }
+  .bg-primary\/6 {
+    background-color: hsl(var(--primary));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-primary\/6 {
+      background-color: color-mix(in oklab, hsl(var(--primary)) 6%, transparent);
+    }
+  }
+}

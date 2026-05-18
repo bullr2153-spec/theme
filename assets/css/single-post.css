@@ -1,0 +1,545 @@
+body.betpro-account-theme.single-post main#primary {
+  background: #eef8f4 !important;
+}
+
+body.betpro-account-theme.single-post,
+body.betpro-account-theme.single-post .betpro-single-post,
+body.betpro-account-theme.single-post .betpro-more-articles,
+body.betpro-account-theme.single-post .betpro-comments-section {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif !important;
+}
+
+body.betpro-account-theme.single-post .betpro-single-post h1,
+body.betpro-account-theme.single-post .betpro-single-post h2,
+body.betpro-account-theme.single-post .betpro-single-post h3,
+body.betpro-account-theme.single-post .betpro-single-post h4,
+body.betpro-account-theme.single-post .betpro-single-post h5,
+body.betpro-account-theme.single-post .betpro-single-post h6,
+body.betpro-account-theme.single-post .betpro-more-articles__inner h2,
+body.betpro-account-theme.single-post .betpro-comments-title {
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+
+body.single-post .betpro-reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  transition-delay: 0ms !important;
+  will-change: auto !important;
+}
+
+body.single-post .betpro-single-post * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Allow hover effects for recommendation cards */
+body.single-post .betpro-more-articles .betpro-post-card {
+  animation: none !important;
+}
+
+body.single-post .betpro-more-articles .betpro-post-card:hover {
+  filter: none !important;
+}
+
+.betpro-single-post {
+  background: #eef8f4;
+  color: #12352b;
+}
+
+.betpro-single-hero {
+  min-height: clamp(390px, 34vw, 560px);
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0, 31, 24, 0.97), rgba(0, 45, 34, 0.94)), #03241c;
+  color: #f4fff9;
+}
+
+.betpro-single-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 0%, rgba(37, 211, 128, 0.12), transparent 24rem),
+    linear-gradient(120deg, transparent 0 38%, rgba(255, 255, 255, 0.025) 38.2%, transparent 39%);
+  pointer-events: none;
+}
+
+.betpro-single-hero__media {
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+}
+
+.betpro-single-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.35) saturate(0.8) brightness(0.45);
+}
+
+.betpro-single-hero__inner {
+  position: relative;
+  width: min(100% - 2rem, 144rem);
+  margin-inline: auto;
+  padding: clamp(5.4rem, 8vw, 7.2rem) 0 clamp(5rem, 7vw, 6.6rem);
+  text-align: center;
+}
+
+.betpro-single-back {
+  display: none;
+}
+
+.betpro-single-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(216, 247, 233, 0.86);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.betpro-single-meta span:first-child {
+  border-radius: 999px;
+  background: #00a875;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 950;
+  letter-spacing: 0.05em;
+  padding: 0.42rem 1rem;
+}
+
+.betpro-single-meta span:last-child {
+  display: none;
+}
+
+.betpro-single-meta time::before {
+  content: '';
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-right: 0.55rem;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  vertical-align: -0.14rem;
+  opacity: 0.78;
+}
+
+.betpro-single-hero h1 {
+  max-width: min(24in, 100%);
+  margin: 0 auto;
+  color: #f4fff9;
+  font-size: clamp(2rem, 4.4vw, 5.1rem);
+  font-weight: 950;
+  line-height: 1.06;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.betpro-single-body {
+  padding: clamp(4.5rem, 8vw, 7rem) 0 0;
+  background: #eef8f4 !important;
+}
+
+.betpro-single-body::before {
+  display: none;
+}
+
+.betpro-single-wrap {
+  width: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+}
+
+.betpro-single-card {
+  display: contents;
+}
+
+.betpro-single-author {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3.1rem;
+  padding: 1.85rem 2rem;
+  border: 1px solid rgba(16, 89, 68, 0.1);
+  border-radius: 0.55rem;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 28px 80px rgba(25, 74, 57, 0.08);
+}
+
+.betpro-single-author__avatar {
+  width: 3.8rem;
+  height: 3.8rem;
+  overflow: hidden;
+  border: 3px solid rgba(20, 184, 128, 0.2);
+  border-radius: 999px;
+  background: #dcebe5;
+}
+
+.betpro-single-author__avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.betpro-single-author strong {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  color: #24483e;
+  font-size: 1.05rem;
+  font-weight: 950;
+}
+
+.betpro-single-author strong::after {
+  content: '';
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 2px solid #0fc76e;
+  border-radius: 999px;
+}
+
+.betpro-single-author p,
+.betpro-single-author time {
+  margin: 0;
+  color: #24483e;
+}
+
+.betpro-single-author p {
+  margin-top: 0.35rem;
+  font-size: 1.08rem;
+}
+
+.betpro-single-author time {
+  justify-self: end;
+  font-size: 0.92rem;
+}
+
+.betpro-single-post .betpro-native-content {
+  max-width: none;
+  margin: 0;
+  padding: 0 0 clamp(2.25rem, 4vw, 3.25rem);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.betpro-single-post .betpro-native-content p,
+.betpro-single-post .betpro-native-content li {
+  color: #24483e;
+  font-size: 1.08rem;
+  line-height: 1.86;
+}
+
+.betpro-single-post .betpro-native-content h2 {
+  margin-top: 2.5rem;
+  padding-top: 0;
+  border-top: 0;
+  color: #001d1a;
+  font-size: clamp(1.5rem, 3vw, 2.55rem);
+  font-weight: 950;
+  line-height: 1.15;
+}
+
+.betpro-single-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.betpro-single-tags span,
+.betpro-single-tags a {
+  border-radius: 999px;
+  background: #f5c518;
+  color: #111111;
+  border: 1px solid rgba(17, 17, 17, 0.22);
+  font-size: 0.92rem;
+  font-weight: 950;
+  padding: 0.5rem 0.82rem;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+.betpro-single-tags a {
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.betpro-single-tags a {
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.betpro-single-tags a:hover,
+.betpro-single-tags a:focus-visible {
+  background: #f5c518;
+  color: #111111;
+  transform: translateY(-1px);
+}
+.betpro-more-articles {
+  padding: clamp(3rem, 5vw, 4.5rem) 0 5rem;
+  background: #f7fcf9;
+  border-top: 1px solid rgba(16, 89, 68, 0.08);
+}
+
+.betpro-more-articles__inner {
+  width: min(100% - 2rem, 74rem);
+  margin-inline: auto;
+}
+
+.betpro-more-articles__inner h2 {
+  margin: 0 0 1.6rem;
+  color: #12352b;
+  font-size: 2rem;
+  font-weight: 950;
+}
+
+.betpro-more-articles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.betpro-more-articles .betpro-post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition-transform: 0.3s ease;
+}
+
+.betpro-more-articles .betpro-post-card:hover {
+  transform: translateY(-0.25rem);
+}
+
+.betpro-more-articles .betpro-post-card__media {
+  flex: 0 0 auto;
+}
+
+.betpro-more-articles .betpro-post-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1.5rem !important;
+}
+
+.betpro-more-articles .betpro-post-card p.text-sm {
+  margin-top: auto;
+}
+
+.betpro-more-articles .betpro-post-card h2 {
+  font-size: 1.25rem !important;
+  line-height: 1.35 !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 800 !important;
+}
+
+/* Comments Section */
+.betpro-comments-section {
+  width: min(100% - 2rem, 56rem);
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(18, 53, 43, 0.1);
+}
+
+.betpro-comments-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #12352b;
+  margin-bottom: 2rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.betpro-comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.betpro-comment-list li {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(18, 53, 43, 0.1);
+}
+
+.betpro-comment-list li:last-child {
+  border-bottom: none;
+}
+
+.betpro-comment-list .comment {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.betpro-comment-list .avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.betpro-comment-list .comment-content {
+  flex: 1;
+}
+
+.betpro-comment-list .comment-author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #12352b;
+}
+
+.betpro-comment-list .comment-author b {
+  font-weight: 700;
+}
+
+.betpro-comment-list .comment-metadata {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.betpro-comment-list .comment-text {
+  color: #333;
+  line-height: 1.6;
+}
+
+.betpro-comment-list .reply {
+  margin-top: 1rem;
+}
+
+.betpro-comment-list .reply a {
+  font-size: 0.875rem;
+  color: #00a875;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.betpro-comment-list .reply a:hover {
+  text-decoration: underline;
+}
+
+/* Comment Form */
+.betpro-comment-form {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(18, 53, 43, 0.1);
+}
+
+.betpro-comment-form p {
+  margin-bottom: 1.5rem;
+}
+
+.betpro-comment-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #12352b;
+  font-size: 0.95rem;
+}
+
+.betpro-comment-form input[type='text'],
+.betpro-comment-form input[type='email'],
+.betpro-comment-form input[type='url'],
+.betpro-comment-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(18, 53, 43, 0.2);
+  border-radius: 0.375rem;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #12352b;
+}
+
+.betpro-comment-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.betpro-comment-form input[type='submit'] {
+  background: #00a875;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.betpro-comment-form input[type='submit']:hover {
+  background: #008b5f;
+}
+
+.betpro-no-comments {
+  color: #666;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.betpro-comment-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.betpro-comment-navigation a {
+  color: #00a875;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.betpro-comment-navigation a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .betpro-single-hero h1 {
+    font-size: clamp(1.65rem, 8vw, 2.5rem) !important;
+    line-height: 1.14;
+  }
+
+  .betpro-single-post .betpro-native-content h2 {
+    font-size: clamp(1.3rem, 5.5vw, 1.85rem) !important;
+    line-height: 1.25;
+  }
+
+  .betpro-single-author {
+    grid-template-columns: 1fr;
+  }
+
+  .betpro-more-articles__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .betpro-single-author time {
+    justify-self: start;
+  }
+
+  .betpro-comments-section {
+    padding: 1.5rem;
+  }
+
+  .betpro-comment-list .comment {
+    gap: 1rem;
+  }
+}

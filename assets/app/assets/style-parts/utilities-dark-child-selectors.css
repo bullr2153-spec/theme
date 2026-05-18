@@ -1,0 +1,298 @@
+@layer utilities {
+  @media (prefers-color-scheme: dark) {
+    .dark\:border-destructive {
+      border-color: hsl(var(--destructive));
+    }
+    .dark\:bg-input\/30 {
+      background-color: hsl(var(--input));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .dark\:bg-input\/30 {
+        background-color: color-mix(in oklab, hsl(var(--input)) 30%, transparent);
+      }
+    }
+    .dark\:bg-transparent {
+      background-color: #0000;
+    }
+    .dark\:text-\[\#facc15\] {
+      color: #facc15;
+    }
+    .dark\:text-\[\#fef3c7\] {
+      color: #fef3c7;
+    }
+    @media (hover: hover) {
+      .dark\:hover\:bg-white\/5:hover {
+        background-color: #ffffff0d;
+      }
+      @supports (color: color-mix(in lab, red, red)) {
+        .dark\:hover\:bg-white\/5:hover {
+          background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+        }
+      }
+    }
+    .dark\:has-data-\[state\=checked\]\:bg-primary\/10:has([data-state='checked']) {
+      background-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .dark\:has-data-\[state\=checked\]\:bg-primary\/10:has([data-state='checked']) {
+        background-color: color-mix(in oklab, hsl(var(--primary)) 10%, transparent);
+      }
+    }
+    .dark\:has-\[\[data-slot\]\[aria-invalid\=true\]\]\:ring-destructive\/40:has(
+      [data-slot][aria-invalid='true']
+    ) {
+      --tw-ring-color: hsl(var(--destructive));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .dark\:has-\[\[data-slot\]\[aria-invalid\=true\]\]\:ring-destructive\/40:has(
+        [data-slot][aria-invalid='true']
+      ) {
+        --tw-ring-color: color-mix(in oklab, hsl(var(--destructive)) 40%, transparent);
+      }
+    }
+  }
+  .\[\&_\.recharts-cartesian-axis-tick_text\]\:fill-muted-foreground
+    .recharts-cartesian-axis-tick
+    text {
+    fill: hsl(var(--muted-foreground));
+  }
+  .\[\&_\.recharts-cartesian-grid_line\[stroke\=\'\#ccc\'\]\]\:stroke-border\/50
+    .recharts-cartesian-grid
+    line[stroke='#ccc'] {
+    stroke: hsl(var(--border));
+  }
+  @supports (color: color-mix(in lab, red, red)) {
+    .\[\&_\.recharts-cartesian-grid_line\[stroke\=\'\#ccc\'\]\]\:stroke-border\/50
+      .recharts-cartesian-grid
+      line[stroke='#ccc'] {
+      stroke: color-mix(in oklab, hsl(var(--border)) 50%, transparent);
+    }
+  }
+  .\[\&_\.recharts-curve\.recharts-tooltip-cursor\]\:stroke-border
+    .recharts-curve.recharts-tooltip-cursor {
+    stroke: hsl(var(--border));
+  }
+  .\[\&_\.recharts-dot\[stroke\=\'\#fff\'\]\]\:stroke-transparent .recharts-dot[stroke='#fff'] {
+    stroke: #0000;
+  }
+  .\[\&_\.recharts-layer\]\:outline-none .recharts-layer {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .\[\&_\.recharts-polar-grid_\[stroke\=\'\#ccc\'\]\]\:stroke-border
+    .recharts-polar-grid
+    [stroke='#ccc'] {
+    stroke: hsl(var(--border));
+  }
+  .\[\&_\.recharts-radial-bar-background-sector\]\:fill-muted
+    .recharts-radial-bar-background-sector,
+  .\[\&_\.recharts-rectangle\.recharts-tooltip-cursor\]\:fill-muted
+    .recharts-rectangle.recharts-tooltip-cursor {
+    fill: hsl(var(--muted));
+  }
+  .\[\&_\.recharts-reference-line_\[stroke\=\'\#ccc\'\]\]\:stroke-border
+    .recharts-reference-line
+    [stroke='#ccc'] {
+    stroke: hsl(var(--border));
+  }
+  .\[\&_\.recharts-sector\]\:outline-none .recharts-sector {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .\[\&_\.recharts-sector\[stroke\=\'\#fff\'\]\]\:stroke-transparent
+    .recharts-sector[stroke='#fff'] {
+    stroke: #0000;
+  }
+  .\[\&_\.recharts-surface\]\:outline-none .recharts-surface {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .\[\&_\[cmdk-group-heading\]\]\:px-2 [cmdk-group-heading] {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .\[\&_\[cmdk-group-heading\]\]\:py-1\.5 [cmdk-group-heading] {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .\[\&_\[cmdk-group-heading\]\]\:text-xs [cmdk-group-heading] {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .\[\&_\[cmdk-group-heading\]\]\:font-medium [cmdk-group-heading] {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .\[\&_\[cmdk-group-heading\]\]\:text-muted-foreground [cmdk-group-heading] {
+    color: hsl(var(--muted-foreground));
+  }
+  .\[\&_\[cmdk-group\]\]\:px-2 [cmdk-group] {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .\[\&_\[cmdk-group\]\:not\(\[hidden\]\)_\~\[cmdk-group\]\]\:pt-0
+    [cmdk-group]:not([hidden])
+    ~ [cmdk-group] {
+    padding-top: calc(var(--spacing) * 0);
+  }
+  .\[\&_\[cmdk-input-wrapper\]_svg\]\:h-5 [cmdk-input-wrapper] svg {
+    height: calc(var(--spacing) * 5);
+  }
+  .\[\&_\[cmdk-input-wrapper\]_svg\]\:w-5 [cmdk-input-wrapper] svg {
+    width: calc(var(--spacing) * 5);
+  }
+  .\[\&_\[cmdk-input\]\]\:h-12 [cmdk-input] {
+    height: calc(var(--spacing) * 12);
+  }
+  .\[\&_\[cmdk-item\]\]\:px-2 [cmdk-item] {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .\[\&_\[cmdk-item\]\]\:py-3 [cmdk-item] {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .\[\&_\[cmdk-item\]_svg\]\:h-5 [cmdk-item] svg {
+    height: calc(var(--spacing) * 5);
+  }
+  .\[\&_\[cmdk-item\]_svg\]\:w-5 [cmdk-item] svg {
+    width: calc(var(--spacing) * 5);
+  }
+  .\[\&_img\]\:size-full img {
+    width: 100%;
+    height: 100%;
+  }
+  .\[\&_img\]\:object-cover img {
+    object-fit: cover;
+  }
+  .\[\&_p\]\:leading-relaxed p {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .\[\&_svg\]\:pointer-events-none svg {
+    pointer-events: none;
+  }
+  .\[\&_svg\]\:size-4 svg {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+  .\[\&_svg\]\:shrink-0 svg {
+    flex-shrink: 0;
+  }
+  .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-3 svg:not([class*='size-']) {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
+  .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-4 svg:not([class*='size-']) {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+  .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-6 svg:not([class*='size-']) {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+  .\[\&_tr\]\:border-b tr {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .\[\&_tr\:last-child\]\:border-0 tr:last-child {
+    border-style: var(--tw-border-style);
+    border-width: 0;
+  }
+  .\[\&\+\[data-slot\=item-content\]\]\:flex-none + [data-slot='item-content'] {
+    flex: none;
+  }
+  .\[\&\:first-child\[data-selected\=true\]_button\]\:rounded-l-md:first-child[data-selected='true']
+    button {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .\[\&\:has\(\[role\=checkbox\]\)\]\:pr-0:has([role='checkbox']) {
+    padding-right: calc(var(--spacing) * 0);
+  }
+  .\[\.border-b\]\:pb-3.border-b {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .\[\.border-t\]\:pt-3.border-t {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  :is(
+    .rtl\:\*\*\:\[\.rdp-button\\_next\>svg\]\:rotate-180:where(
+        :dir(rtl),
+        [dir='rtl'],
+        [dir='rtl'] *
+      )
+      *
+  ):is(.rdp-button_next > svg),
+  :is(
+    .rtl\:\*\*\:\[\.rdp-button\\_previous\>svg\]\:rotate-180:where(
+        :dir(rtl),
+        [dir='rtl'],
+        [dir='rtl'] *
+      )
+      *
+  ):is(.rdp-button_previous > svg) {
+    rotate: 180deg;
+  }
+  .\[a\]\:transition-colors:is(a) {
+    transition-property:
+      color, background-color, border-color, outline-color, text-decoration-color, fill, stroke,
+      --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  @media (hover: hover) {
+    .\[a\]\:hover\:bg-accent\/50:is(a):hover {
+      background-color: hsl(var(--accent));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .\[a\]\:hover\:bg-accent\/50:is(a):hover {
+        background-color: color-mix(in oklab, hsl(var(--accent)) 50%, transparent);
+      }
+    }
+  }
+  .\[\&\:last-child\[data-selected\=true\]_button\]\:rounded-r-md:last-child[data-selected='true']
+    button {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .\[\&\>\*\]\:w-full > * {
+    width: 100%;
+  }
+  .\[\&\>\*\]\:focus-visible\:relative > :focus-visible {
+    position: relative;
+  }
+  .\[\&\>\*\]\:focus-visible\:z-10 > :focus-visible {
+    z-index: 10;
+  }
+  @container field-group (min-width:28rem) {
+    .\@md\/field-group\:\[\&\>\*\]\:w-auto > * {
+      width: auto;
+    }
+  }
+  .\[\&\>\*\:not\(\:first-child\)\]\:rounded-t-none > :not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .\[\&\>\*\:not\(\:first-child\)\]\:rounded-l-none > :not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .\[\&\>\*\:not\(\:first-child\)\]\:border-t-0 > :not(:first-child) {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 0;
+  }
+  .\[\&\>\*\:not\(\:first-child\)\]\:border-l-0 > :not(:first-child) {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 0;
+  }
+  .\[\&\>\*\:not\(\:last-child\)\]\:rounded-r-none > :not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .\[\&\>\*\:not\(\:last-child\)\]\:rounded-b-none > :not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .\[\&\>\.sr-only\]\:w-auto > .sr-only {
+    width: auto;
+  }
+  .\[\&\>\[data-slot\=field-group\]\]\:gap-4 > [data-slot='field-group'] {
+    gap: calc(var(--spacing) * 4);
+  }
+}

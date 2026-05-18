@@ -1,0 +1,297 @@
+@layer utilities {
+  @media (hover: hover) {
+    .hover\:-translate-y-0\.5:hover {
+      --tw-translate-y: calc(var(--spacing) * -0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:-translate-y-1:hover {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:-translate-y-1\.5:hover {
+      --tw-translate-y: calc(var(--spacing) * -1.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:gap-3:hover {
+      gap: calc(var(--spacing) * 3);
+    }
+    .hover\:border-\[\#facc15\]\/75:hover {
+      border-color: #facc15bf;
+    }
+    .hover\:border-primary\/20:hover {
+      border-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/20:hover {
+        border-color: color-mix(in oklab, hsl(var(--primary)) 20%, transparent);
+      }
+    }
+    .hover\:border-primary\/25:hover {
+      border-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/25:hover {
+        border-color: color-mix(in oklab, hsl(var(--primary)) 25%, transparent);
+      }
+    }
+    .hover\:border-primary\/30:hover {
+      border-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/30:hover {
+        border-color: color-mix(in oklab, hsl(var(--primary)) 30%, transparent);
+      }
+    }
+    .hover\:border-primary\/35:hover {
+      border-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/35:hover {
+        border-color: color-mix(in oklab, hsl(var(--primary)) 35%, transparent);
+      }
+    }
+    .hover\:border-primary\/40:hover {
+      border-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/40:hover {
+        border-color: color-mix(in oklab, hsl(var(--primary)) 40%, transparent);
+      }
+    }
+    .hover\:border-primary\/45:hover {
+      border-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/45:hover {
+        border-color: color-mix(in oklab, hsl(var(--primary)) 45%, transparent);
+      }
+    }
+    .hover\:bg-\[\#25D366\]\/20:hover {
+      background-color: #25d36633;
+    }
+    .hover\:bg-\[\#0088cc\]\/20:hover {
+      background-color: #08c3;
+    }
+    .hover\:bg-accent:hover {
+      background-color: hsl(var(--accent));
+    }
+    .hover\:bg-black\/5:hover {
+      background-color: #0000000d;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-black\/5:hover {
+        background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+      }
+    }
+    .hover\:bg-card:hover {
+      background-color: hsl(var(--card));
+    }
+    .hover\:bg-green-500:hover {
+      background-color: var(--color-green-500);
+    }
+    .hover\:bg-muted:hover,
+    .hover\:bg-muted\/50:hover {
+      background-color: hsl(var(--muted));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-muted\/50:hover {
+        background-color: color-mix(in oklab, hsl(var(--muted)) 50%, transparent);
+      }
+    }
+    .hover\:bg-primary\/8:hover {
+      background-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-primary\/8:hover {
+        background-color: color-mix(in oklab, hsl(var(--primary)) 8%, transparent);
+      }
+    }
+    .hover\:bg-primary\/15:hover {
+      background-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-primary\/15:hover {
+        background-color: color-mix(in oklab, hsl(var(--primary)) 15%, transparent);
+      }
+    }
+    .hover\:bg-primary\/90:hover {
+      background-color: hsl(var(--primary));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-primary\/90:hover {
+        background-color: color-mix(in oklab, hsl(var(--primary)) 90%, transparent);
+      }
+    }
+    .hover\:bg-secondary:hover {
+      background-color: hsl(var(--secondary));
+    }
+    .hover\:bg-white\/10:hover {
+      background-color: #ffffff1a;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/10:hover {
+        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+    .hover\:bg-white\/\[0\.08\]:hover {
+      background-color: #ffffff14;
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/\[0\.08\]:hover {
+        background-color: color-mix(in oklab, var(--color-white) 8%, transparent);
+      }
+    }
+    .hover\:text-accent-foreground:hover {
+      color: hsl(var(--accent-foreground));
+    }
+    .hover\:text-foreground:hover {
+      color: hsl(var(--foreground));
+    }
+    .hover\:text-muted-foreground:hover {
+      color: hsl(var(--muted-foreground));
+    }
+    .hover\:text-primary:hover {
+      color: hsl(var(--primary));
+    }
+    .hover\:text-white:hover {
+      color: var(--color-white);
+    }
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+    .hover\:opacity-90:hover {
+      opacity: 0.9;
+    }
+    .hover\:opacity-100:hover {
+      opacity: 1;
+    }
+    .hover\:shadow-\[0_0_0_1px_hsl\(var\(--sidebar-accent\)\)\]:hover {
+      --tw-shadow: 0 0 0 1px var(--tw-shadow-color, hsl(var(--sidebar-accent)));
+      box-shadow:
+        var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+        var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:shadow-\[0_8px_30px_rgba\(34\,197\,94\,0\.1\)\]:hover {
+      --tw-shadow: 0 8px 30px var(--tw-shadow-color, #22c55e1a);
+      box-shadow:
+        var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+        var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:shadow-\[0_8px_30px_rgba\(34\,197\,94\,0\.08\)\]:hover {
+      --tw-shadow: 0 8px 30px var(--tw-shadow-color, #22c55e14);
+      box-shadow:
+        var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+        var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:shadow-\[0_8px_40px_rgba\(34\,197\,94\,0\.08\)\]:hover {
+      --tw-shadow: 0 8px 40px var(--tw-shadow-color, #22c55e14);
+      box-shadow:
+        var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+        var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:shadow-\[0_18px_45px_rgba\(77\,138\,114\,0\.12\)\]:hover {
+      --tw-shadow: 0 18px 45px var(--tw-shadow-color, #4d8a721f);
+      box-shadow:
+        var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+        var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:shadow-\[0_22px_60px_rgba\(77\,138\,114\,0\.14\)\]:hover {
+      --tw-shadow: 0 22px 60px var(--tw-shadow-color, #4d8a7224);
+      box-shadow:
+        var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+        var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .group-\[\.destructive\]\:hover\:border-destructive\/30:is(:where(.group).destructive *):hover {
+      border-color: hsl(var(--destructive));
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-\[\.destructive\]\:hover\:border-destructive\/30:is(
+          :where(.group).destructive *
+        ):hover {
+        border-color: color-mix(in oklab, hsl(var(--destructive)) 30%, transparent);
+      }
+    }
+    .group-\[\.destructive\]\:hover\:bg-destructive:is(:where(.group).destructive *):hover {
+      background-color: hsl(var(--destructive));
+    }
+    .group-\[\.destructive\]\:hover\:text-destructive-foreground:is(
+        :where(.group).destructive *
+      ):hover {
+      color: hsl(var(--destructive-foreground));
+    }
+    .group-\[\.destructive\]\:hover\:text-red-50:is(:where(.group).destructive *):hover {
+      color: var(--color-red-50);
+    }
+  }
+  .focus\:border-primary:focus {
+    border-color: hsl(var(--primary));
+  }
+  .focus\:bg-accent:focus {
+    background-color: hsl(var(--accent));
+  }
+  .focus\:text-accent-foreground:focus {
+    color: hsl(var(--accent-foreground));
+  }
+  .focus\:opacity-100:focus {
+    opacity: 1;
+  }
+  .focus\:ring-1:focus {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width))
+      var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+      var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .focus\:ring-2:focus {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width))
+      var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+      var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .focus\:ring-ring:focus {
+    --tw-ring-color: hsl(var(--ring));
+  }
+  .focus\:ring-offset-2:focus {
+    --tw-ring-offset-width: 2px;
+    --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0 var(--tw-ring-offset-width)
+      var(--tw-ring-offset-color);
+  }
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .group-\[\.destructive\]\:focus\:ring-destructive:is(:where(.group).destructive *):focus {
+    --tw-ring-color: hsl(var(--destructive));
+  }
+  .group-\[\.destructive\]\:focus\:ring-red-400:is(:where(.group).destructive *):focus {
+    --tw-ring-color: var(--color-red-400);
+  }
+  .group-\[\.destructive\]\:focus\:ring-offset-red-600:is(:where(.group).destructive *):focus {
+    --tw-ring-offset-color: var(--color-red-600);
+  }
+  .focus-visible\:border-ring:focus-visible {
+    border-color: hsl(var(--ring));
+  }
+  .focus-visible\:ring-0:focus-visible {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width))
+      var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+      var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .focus-visible\:ring-1:focus-visible {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width))
+      var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+      var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .focus-visible\:ring-2:focus-visible {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width))
+      var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+      var(--tw-ring-shadow), var(--tw-shadow);
+  }
+}

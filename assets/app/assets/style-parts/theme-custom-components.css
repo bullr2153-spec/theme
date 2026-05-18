@@ -1,0 +1,137 @@
+@layer utilities {
+  .light .text-gradient-green {
+    -webkit-text-fill-color: transparent;
+    color: #0000;
+    background: linear-gradient(135deg, #356f64, #4d8a72, #b78b4e);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .light .bg-gradient-green {
+    background: linear-gradient(135deg, #417c68, #5a9076, #ba8c4c);
+  }
+  .light .glow-green {
+    box-shadow:
+      0 18px 45px #4d8a722e,
+      0 10px 24px #b78b4e14;
+  }
+  .betpro-platform-chip {
+    border-color: #facc1561;
+    background: linear-gradient(135deg, #1f2937f2, #78350fcc 58%, #f59e0b4d);
+    color: #fff6d6;
+    box-shadow:
+      0 18px 40px #02061759,
+      inset 0 1px 0 #ffffff1c,
+      0 0 0 1px #facc1517;
+    text-shadow: 0 1px 0 #00000033;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+  .betpro-platform-chip:hover {
+    border-color: #fde047b3;
+    color: #fffbeb;
+    box-shadow:
+      0 22px 45px #02061773,
+      0 0 28px #f59e0b29,
+      inset 0 1px 0 #ffffff26;
+  }
+  .betpro-platform-chip__dot {
+    background: radial-gradient(circle at 30% 30%, #fef3c7, #f59e0b 62%, #b45309);
+    box-shadow:
+      0 0 0 4px #f59e0b1f,
+      0 0 18px #f59e0b8a;
+  }
+  .betpro-platform-chip__icon {
+    color: #fbbf24;
+    filter: drop-shadow(0 0 10px #f59e0b80);
+  }
+  .light [class~='border-white/5'] {
+    border-color: #4d8a721f !important;
+  }
+  .light [class~='border-white/8'] {
+    border-color: #4d8a7224 !important;
+  }
+  .light [class~='border-white/10'] {
+    border-color: #4d8a7229 !important;
+  }
+  .light [class~='bg-white/[0.015]'] {
+    background: linear-gradient(#ffffffbd, #f7f3eab8) !important;
+  }
+  .light [class~='bg-white/[0.03]'] {
+    background-color: #ffffffa8 !important;
+  }
+  .light [class~='bg-white/[0.04]'] {
+    background-color: #ffffffbd !important;
+  }
+  .light [class~='bg-white/[0.05]'] {
+    background-color: #ffffffd1 !important;
+  }
+  .light [class~='ring-white/10'] {
+    --tw-ring-color: #4d8a7224 !important;
+  }
+  .light [class~='text-white/80'] {
+    color: #273430cc !important;
+  }
+  .light [class~='text-white/85'] {
+    color: #273430d9 !important;
+  }
+  .light [class~='text-white/90'] {
+    color: #273430e6 !important;
+  }
+  .light .betpro-platform-chip {
+    border-color: #d977063d;
+    background: linear-gradient(135deg, #fffffff5, #fffbebf7 52%, #fbbf2442);
+    color: #78350f;
+    box-shadow:
+      0 18px 36px #b4530924,
+      inset 0 1px 0 #ffffffed,
+      0 0 0 1px #f59e0b14;
+    text-shadow: none;
+  }
+  .light .betpro-platform-chip:hover {
+    border-color: #d977068c;
+    color: #5b2d0b;
+    box-shadow:
+      0 22px 42px #b4530930,
+      0 10px 24px #f59e0b1f,
+      inset 0 1px 0 #ffffff;
+  }
+  .light .betpro-platform-chip__dot {
+    box-shadow:
+      0 0 0 4px #f59e0b17,
+      0 0 14px #f59e0b5e;
+  }
+  .light .betpro-platform-chip__icon {
+    color: #d97706;
+    filter: drop-shadow(0 0 8px #f59e0b40);
+  }
+  .hover-lift {
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+  .hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px #0000001f;
+  }
+  .section-divider {
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(var(--brand-rgb), 0.28),
+      rgba(var(--accent-rgb), 0.24),
+      transparent
+    );
+    height: 1px;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translate(0);
+    }
+    to {
+      transform: translate(-50%);
+    }
+  }
+  .animate-marquee {
+    animation: 30s linear infinite marquee;
+  }
+}

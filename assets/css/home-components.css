@@ -1,0 +1,231 @@
+body.betpro-account-theme .betpro-choice-card,
+body.betpro-account-theme .betpro-testimonials-section article {
+    border-color: rgba(15, 118, 110, 0.12) !important;
+    border-radius: 0.72rem !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(251, 255, 253, 0.94)) !important;
+    box-shadow: 0 20px 48px rgba(15, 43, 35, 0.055) !important;
+}
+
+.betpro-choice-card__icon {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-bottom: 1.35rem;
+    border: 1px solid rgba(16, 185, 129, 0.22);
+    border-radius: 0.45rem;
+    background: rgba(16, 185, 129, 0.08);
+    position: relative;
+}
+
+.betpro-choice-card__icon i {
+    color: #16a866;
+    font-size: 0.9rem;
+}
+
+.betpro-service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    max-width: 82rem;
+    border: 1px solid rgba(15, 118, 110, 0.1);
+    border-radius: 0.7rem;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 18px 42px rgba(15, 43, 35, 0.055);
+}
+
+.betpro-service-tags span,
+.betpro-mini-link {
+    border-radius: 999px;
+    background: rgba(16, 185, 129, 0.08);
+    color: #168655;
+    font-size: 0.78rem;
+    font-weight: 850;
+    padding: 0.45rem 0.75rem;
+    text-decoration: none;
+}
+
+.betpro-process-list,
+.betpro-faq-grid,
+.betpro-blog-preview-grid {
+    display: grid;
+}
+
+.betpro-process-list {
+    gap: 1.3rem;
+}
+
+.betpro-process-step {
+    display: grid;
+    grid-template-columns: 2.6rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.betpro-process-step > span {
+    display: inline-flex;
+    width: 2.35rem;
+    height: 2.35rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #18a866;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 950;
+    box-shadow: 0 14px 30px rgba(24, 168, 102, 0.22);
+}
+
+.betpro-process-step h3 {
+    margin: 0 0 0.22rem;
+    color: #12352b;
+    font-size: 1rem;
+    font-weight: 950;
+}
+
+.betpro-process-step p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.betpro-process-visual {
+    overflow: hidden;
+    align-self: center;
+    border: 1px solid rgba(15, 118, 110, 0.12);
+    border-radius: 0.8rem;
+    box-shadow: 0 28px 70px rgba(15, 43, 35, 0.14);
+}
+
+.betpro-process-visual img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.18;
+    object-fit: cover;
+}
+
+.betpro-compare-table {
+    overflow: hidden;
+    max-width: 82rem;
+    margin: 2.5rem auto 0;
+    border: 1px solid rgba(15, 118, 110, 0.14);
+    border-radius: 0.8rem;
+    background: #fff;
+    box-shadow: 0 24px 58px rgba(15, 43, 35, 0.07);
+}
+
+.betpro-compare-table__head,
+.betpro-compare-table__row {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr 1.05fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1.25rem;
+}
+
+.betpro-compare-table__head {
+    background: #eefaf5;
+    color: #12352b;
+    font-size: 0.78rem;
+    font-weight: 950;
+}
+
+.betpro-compare-table__row {
+    border-top: 1px solid rgba(15, 118, 110, 0.09);
+    color: rgba(18, 53, 43, 0.68);
+    font-size: 0.88rem;
+}
+
+.betpro-compare-table__row strong,
+.betpro-compare-table__row em {
+    display: inline-flex;
+    gap: 0.45rem;
+    align-items: center;
+    font-style: normal;
+    font-weight: 850;
+}
+
+.betpro-compare-table__row strong {
+    color: #168655;
+}
+
+.betpro-compare-table__row em {
+    color: rgba(18, 53, 43, 0.52);
+}
+
+.betpro-compare-table__row em i {
+    color: #ef4444;
+}
+
+.betpro-faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.betpro-faq-card {
+    border: 1px solid rgba(15, 118, 110, 0.1);
+    border-radius: 0.7rem;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 16px 38px rgba(15, 43, 35, 0.045);
+}
+
+.betpro-faq-card summary {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.1rem 1.2rem;
+    color: #12352b;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.betpro-faq-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.betpro-faq-card summary::after {
+    content: "\2b";
+    color: #168655;
+    font-family: "Font Awesome 6 Free";
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.betpro-faq-card[open] summary::after {
+    content: "\f068";
+}
+
+.betpro-faq-card p {
+    margin: 0;
+    padding: 0 1.2rem 1.15rem;
+    color: rgba(18, 53, 43, 0.66);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .betpro-faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .betpro-compare-table {
+        overflow-x: auto;
+    }
+
+    .betpro-compare-table__head,
+    .betpro-compare-table__row {
+        min-width: 680px;
+    }
+}
+
+@media (max-width: 640px) {
+    .betpro-service-tags {
+        justify-content: flex-start;
+    }
+}

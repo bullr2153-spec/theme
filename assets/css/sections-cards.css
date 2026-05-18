@@ -1,0 +1,436 @@
+.betpro-eyebrow {
+    width: fit-content;
+    border-radius: 999px;
+    border: 1px solid hsl(var(--primary, 142.1 76.2% 36.3%) / 0.18);
+    background: hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08);
+    padding: 0.42rem 0.72rem;
+}
+
+.betpro-content-section,
+.betpro-home-services,
+.betpro-process-section,
+.betpro-testimonials-section {
+    position: relative;
+}
+
+body.betpro-account-theme section.betpro-content-section,
+html.light body.betpro-account-theme section.betpro-content-section[class*='py-16'][class*='bg-background'],
+html.dark body.betpro-account-theme section.betpro-content-section[class*='py-16'][class*='bg-background'] {
+    overflow: hidden;
+    border-top: 1px solid rgba(20, 184, 166, 0.1);
+    background:
+        radial-gradient(circle at 8% 0%, rgba(34, 197, 94, 0.08), transparent 30%),
+        radial-gradient(circle at 92% 12%, rgba(250, 204, 21, 0.08), transparent 28%),
+        linear-gradient(180deg, #f5fbf8 0%, #fbfefd 17rem, #ffffff 100%) !important;
+}
+
+body.betpro-account-theme section.betpro-content-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(120deg, transparent 0 55%, rgba(255, 255, 255, 0.62) 55.2%, transparent 56%),
+        linear-gradient(24deg, transparent 0 72%, rgba(20, 184, 166, 0.045) 72.2%, transparent 73%);
+    opacity: 0.9;
+}
+
+html.dark body.betpro-account-theme section.betpro-content-section {
+    border-top-color: rgba(16, 185, 129, 0.16);
+    background:
+        radial-gradient(circle at 8% 0%, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.13), transparent 30%),
+        radial-gradient(circle at 92% 12%, rgba(250, 204, 21, 0.09), transparent 28%),
+        linear-gradient(180deg, hsl(var(--background, 220 48% 6%)) 0%, hsl(var(--background, 220 48% 6%)) 100%) !important;
+}
+
+html.dark body.betpro-account-theme section.betpro-content-section::before {
+    background:
+        linear-gradient(120deg, transparent 0 55%, rgba(110, 231, 183, 0.045) 55.2%, transparent 56%),
+        linear-gradient(24deg, transparent 0 72%, rgba(250, 204, 21, 0.035) 72.2%, transparent 73%);
+    opacity: 0.62;
+}
+
+.betpro-content-section>div {
+    border-radius: 1.5rem;
+}
+
+body.betpro-account-theme .betpro-content-section article.rounded-2xl {
+    border-color: rgba(15, 118, 110, 0.14) !important;
+    border-radius: 1.2rem !important;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 251, 248, 0.94)) !important;
+    box-shadow: 0 18px 46px rgba(15, 23, 42, 0.055) !important;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+body.betpro-account-theme .betpro-content-section article.rounded-2xl:hover {
+    border-color: rgba(16, 185, 129, 0.32) !important;
+    box-shadow: 0 26px 64px rgba(15, 23, 42, 0.09) !important;
+    transform: translateY(-2px);
+}
+
+html.dark body.betpro-account-theme .betpro-content-section article.rounded-2xl {
+    border-color: rgba(110, 231, 183, 0.16) !important;
+    background:
+        linear-gradient(180deg, hsl(var(--card, 218 38% 10%)), hsl(var(--card, 218 38% 10%) / 0.88)) !important;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.22) !important;
+}
+
+.betpro-section-heading h2 {
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+}
+
+.betpro-section-heading p:not(.betpro-eyebrow) {
+    font-size: 1.05rem;
+}
+
+.betpro-service-card {
+    min-height: 100%;
+}
+
+.betpro-service-card::before,
+.betpro-process-card::before,
+.betpro-post-card::before,
+.betpro-listing-card::before,
+.betpro-link-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 92% 8%, rgba(250, 204, 21, 0.12), transparent 28%),
+        linear-gradient(180deg, rgba(34, 197, 94, 0.035), transparent 52%);
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.betpro-service-card:hover::before,
+.betpro-process-card:hover::before,
+.betpro-post-card:hover::before,
+.betpro-listing-card:hover::before,
+.betpro-link-panel:hover::before {
+    opacity: 1;
+}
+
+.betpro-service-card__number {
+    position: absolute;
+    right: 1.25rem;
+    top: 1rem;
+    color: hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08);
+    font-size: 4.2rem;
+    font-weight: 950;
+    line-height: 1;
+}
+
+.betpro-service-card__list li {
+    align-items: flex-start;
+}
+
+.betpro-service-card__list span:first-child {
+    display: inline-flex;
+    width: 1.35rem;
+    height: 1.35rem;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: hsl(var(--primary, 142.1 76.2% 36.3%) / 0.1);
+    font-size: 0.78rem;
+}
+
+.betpro-service-feature-panel {
+    position: relative;
+    overflow: hidden;
+    margin-top: clamp(1rem, 2.4vw, 2rem);
+    background:
+        radial-gradient(circle at 86% 12%, rgba(250, 204, 21, 0.18), transparent 30%),
+        linear-gradient(135deg, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08), hsl(var(--card, 0 0% 100%))) !important;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.065);
+}
+
+.betpro-service-feature-panel > div {
+    gap: clamp(2rem, 4vw, 3.75rem) !important;
+}
+
+.betpro-service-feature-panel h2 {
+    margin-bottom: 0.85rem !important;
+    font-size: clamp(2rem, 3.2vw, 2.65rem) !important;
+    line-height: 1.08 !important;
+}
+
+.betpro-service-feature-panel h2 + p {
+    margin-bottom: 1rem !important;
+    font-size: clamp(1.05rem, 1.8vw, 1.28rem) !important;
+    line-height: 1.4 !important;
+}
+
+.betpro-service-feature-panel p {
+    max-width: 48rem;
+}
+
+.betpro-service-feature-panel .flex.flex-wrap {
+    gap: 0.85rem !important;
+    margin-bottom: 1.7rem !important;
+}
+
+.betpro-service-feature-panel .flex.flex-wrap span {
+    display: inline-flex;
+    min-height: 2.45rem;
+    align-items: center;
+    border-radius: 999px !important;
+    line-height: 1.25;
+}
+
+.betpro-service-feature-panel .flex.flex-wrap + p {
+    margin-bottom: 1.65rem !important;
+    padding-top: 1.35rem;
+    border-top: 1px solid rgba(15, 118, 110, 0.1);
+}
+
+.betpro-service-feature-panel h3 {
+    margin-bottom: 0.55rem !important;
+    font-size: clamp(1.2rem, 2vw, 1.45rem) !important;
+}
+
+.betpro-process-list {
+    counter-reset: betpro-process;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.betpro-process-shell {
+    display: grid;
+    gap: 2rem;
+}
+
+.betpro-process-intro {
+    max-width: 48rem;
+    padding: clamp(1.4rem, 3vw, 2rem);
+    border: 1px solid rgba(15, 118, 110, 0.12);
+    border-radius: 1.3rem;
+    background:
+        radial-gradient(circle at top right, rgba(250, 204, 21, 0.14), transparent 24%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 251, 248, 0.94));
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.05);
+}
+
+.betpro-process-intro .betpro-eyebrow {
+    margin-bottom: 0.9rem;
+}
+
+.betpro-process-intro h2 {
+    margin: 0 0 0.8rem;
+    color: #12352b;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 950;
+    line-height: 1.08;
+}
+
+.betpro-process-intro p:not(.betpro-eyebrow) {
+    margin: 0;
+    color: rgba(18, 53, 43, 0.68);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.betpro-process-card {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.35rem 1.45rem !important;
+}
+
+.betpro-process-card__top {
+    display: flex;
+    align-items: center;
+    gap: 0.95rem;
+}
+
+.betpro-process-card__body {
+    padding-left: 3.95rem;
+}
+
+.betpro-process-card__meta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(16, 185, 129, 0.08);
+    color: #168655;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.04em;
+}
+
+.betpro-process-card__number {
+    box-shadow: 0 12px 24px rgba(34, 197, 94, 0.24);
+}
+
+.betpro-listing-card,
+.betpro-link-panel {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 18px 45px hsl(var(--foreground, 222.2 84% 4.9%) / 0.055);
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.betpro-listing-card:hover,
+.betpro-link-panel:hover {
+    border-color: hsl(var(--primary, 142.1 76.2% 36.3%) / 0.3);
+    box-shadow: 0 24px 62px hsl(var(--foreground, 222.2 84% 4.9%) / 0.09);
+    transform: translateY(-2px);
+}
+
+.betpro-content-section>div,
+.betpro-home-services>div,
+.betpro-process-section>div,
+.betpro-testimonials-section>div {
+    position: relative;
+    z-index: 1;
+}
+
+.betpro-home-services::before,
+.betpro-testimonials-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(180deg, transparent, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.035), transparent),
+        radial-gradient(circle at 92% 12%, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08), transparent 26%);
+}
+
+.betpro-stat-band {
+    background:
+        linear-gradient(90deg, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08), rgba(250, 204, 21, 0.08), hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08));
+}
+
+.betpro-process-section {
+    background:
+        radial-gradient(circle at 86% 16%, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.08), transparent 30%),
+        hsl(var(--card, 0 0% 100%));
+}
+
+.betpro-cta-section {
+    background:
+        radial-gradient(circle at 50% 0%, rgba(250, 204, 21, 0.18), transparent 30%),
+        radial-gradient(circle at 12% 82%, rgba(34, 197, 94, 0.14), transparent 28%),
+        linear-gradient(135deg, hsl(var(--primary, 142.1 76.2% 36.3%) / 0.095), hsl(var(--primary, 142.1 76.2% 36.3%) / 0.025));
+}
+
+.betpro-cta-section h2 {
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    font-size: clamp(1.9rem, 3vw, 3rem) !important;
+}
+
+.betpro-cta-section a {
+    min-width: 11rem;
+}
+
+.betpro-post-card,
+.betpro-contact-form-shell,
+.betpro-native-theme article.rounded-2xl,
+.betpro-native-theme .rounded-2xl.border {
+    box-shadow: 0 18px 45px hsl(var(--foreground, 222.2 84% 4.9%) / 0.055);
+}
+
+.betpro-post-card {
+    position: relative;
+}
+
+.betpro-post-card:hover,
+.betpro-native-theme article.rounded-2xl:hover {
+    box-shadow: 0 24px 60px hsl(var(--foreground, 222.2 84% 4.9%) / 0.09);
+}
+
+.betpro-post-card__media {
+    overflow: hidden;
+}
+
+.betpro-post-card__media img {
+    transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), filter 220ms ease;
+}
+
+.betpro-post-card:hover .betpro-post-card__media img {
+    filter: saturate(1.08) contrast(1.04);
+    transform: scale(1.045);
+}
+
+.betpro-post-card__body {
+    position: relative;
+}
+
+body.betpro-account-theme .betpro-content-section--services,
+body.betpro-account-theme .betpro-content-section--how-it-works {
+    padding-top: clamp(3.4rem, 6vw, 5rem) !important;
+}
+
+body.betpro-account-theme .betpro-content-section--services > div,
+body.betpro-account-theme .betpro-content-section--how-it-works > div {
+    border-radius: 0;
+}
+
+body.betpro-account-theme .betpro-content-section--services .betpro-services-overview,
+body.betpro-account-theme .betpro-content-section--how-it-works .betpro-process-list {
+    margin-top: 0;
+}
+
+@media (max-width: 640px) {
+    .betpro-process-card__top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .betpro-process-card__body {
+        padding-left: 0;
+    }
+}
+
+
+body.betpro-account-theme .betpro-content-section .betpro-post-card {
+    overflow: hidden;
+    border: 1px solid rgba(15, 118, 110, 0.12) !important;
+    border-radius: 0.75rem !important;
+    background: #fff !important;
+    box-shadow: 0 20px 48px rgba(15, 43, 35, 0.055) !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body.betpro-account-theme .betpro-content-section .betpro-post-card__media img {
+    width: 100%;
+    aspect-ratio: 1.83;
+    height: auto !important;
+    object-fit: cover;
+}
+
+body.betpro-account-theme .betpro-content-section .betpro-post-card__body {
+    padding: 1.05rem !important;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+body.betpro-account-theme .betpro-content-section .betpro-post-card h2 {
+    margin: 0 0 0.6rem !important;
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    color: #12352b !important;
+}
+
+body.betpro-account-theme .betpro-content-section .betpro-post-card p.text-sm {
+    margin-top: auto;
+    margin-bottom: 0;
+    color: rgba(18, 53, 43, 0.62);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}

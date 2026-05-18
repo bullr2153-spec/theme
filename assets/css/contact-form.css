@@ -1,0 +1,120 @@
+.betpro-contact-form--inline {
+    border: 1px solid rgba(15, 118, 110, 0.13);
+    border-radius: 0.55rem;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 253, 251, 0.9));
+    box-shadow: 0 26px 80px rgba(15, 23, 42, 0.06);
+    display: grid;
+    gap: 1.45rem;
+    padding: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.betpro-contact-form--inline h2 {
+    color: hsl(var(--foreground, 222.2 84% 4.9%));
+    font-size: clamp(1.4rem, 2vw, 1.58rem);
+    font-weight: 950;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin: 0 0 0.45rem;
+}
+
+.betpro-contact-form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.45rem 1.5rem;
+}
+
+.betpro-contact-form label {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.betpro-contact-form label span {
+    color: hsl(var(--foreground, 222.2 84% 4.9%));
+    font-size: 0.86rem;
+    font-weight: 850;
+}
+
+.betpro-contact-form input,
+.betpro-contact-form textarea {
+    width: 100%;
+    border: 1px solid rgba(15, 118, 110, 0.16);
+    border-radius: 0.45rem;
+    background: rgba(255, 255, 255, 0.86);
+    color: hsl(var(--foreground, 222.2 84% 4.9%));
+    font: inherit;
+    min-height: 2.35rem;
+    outline: none;
+    padding: 0.62rem 0.8rem;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.betpro-contact-form textarea {
+    min-height: 7.45rem;
+    resize: vertical;
+}
+
+.betpro-contact-form input:focus,
+.betpro-contact-form textarea:focus {
+    border-color: rgba(16, 185, 129, 0.76);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.13);
+}
+
+.betpro-contact-form__actions {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.betpro-contact-form button {
+    align-items: center;
+    border: 0;
+    border-radius: 0.45rem;
+    background: #059669;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 900;
+    gap: 0.65rem;
+    justify-content: center;
+    min-height: 2.55rem;
+    padding: 0.75rem 1.25rem;
+    transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.betpro-contact-form button:hover {
+    background: #00895e;
+    box-shadow: 0 16px 34px rgba(5, 150, 105, 0.24);
+    transform: translateY(-1px);
+}
+
+.betpro-contact-form button:disabled {
+    cursor: wait;
+    opacity: 0.68;
+    transform: none;
+}
+
+.betpro-contact-form__message {
+    color: hsl(var(--muted-foreground, 215.4 16.3% 46.9%));
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+html.dark body.betpro-account-theme .betpro-contact-form--inline {
+    background:
+        linear-gradient(180deg, hsl(var(--card, 218 38% 10%)), hsl(var(--card, 218 38% 10%) / 0.88));
+    border-color: rgba(110, 231, 183, 0.16);
+}
+
+html.dark body.betpro-account-theme .betpro-contact-form input,
+html.dark body.betpro-account-theme .betpro-contact-form textarea {
+    background: hsl(var(--background, 220 48% 6%) / 0.62);
+    border-color: rgba(110, 231, 183, 0.16);
+}
+
+@media (max-width: 640px) {
+    .betpro-contact-form__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

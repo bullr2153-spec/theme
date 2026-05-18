@@ -1,0 +1,118 @@
+.betpro-page-hero {
+    isolation: isolate;
+    min-height: clamp(305px, 31vw, 390px);
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(180deg, rgba(234, 248, 243, 0.96), rgba(240, 250, 247, 0.9)),
+        hsl(var(--background, 0 0% 100%));
+}
+
+.betpro-page-hero::before,
+.betpro-page-hero::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.betpro-page-hero::before {
+    inset: 0;
+    background:
+        linear-gradient(120deg, transparent 0 42%, rgba(255, 255, 255, 0.56) 42.3%, transparent 43.4%),
+        linear-gradient(28deg, transparent 0 63%, rgba(255, 255, 255, 0.5) 63.4%, transparent 64.8%),
+        linear-gradient(150deg, transparent 0 74%, rgba(255, 255, 255, 0.42) 74.2%, transparent 75.3%);
+    opacity: 0.72;
+}
+
+.betpro-page-hero::after {
+    right: 10%;
+    bottom: -120px;
+    width: 280px;
+    height: 280px;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.08);
+    filter: blur(56px);
+}
+
+.betpro-page-hero img {
+    opacity: 0.1;
+    filter: saturate(0.35) contrast(1.04) brightness(1.16);
+    transform: scale(1.04);
+}
+
+.betpro-page-hero__overlay {
+    background:
+        radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.84), transparent 28%),
+        linear-gradient(180deg, rgba(240, 253, 248, 0.9), rgba(234, 247, 243, 0.82)),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.08), transparent 34%, rgba(245, 158, 11, 0.08));
+}
+
+.dark .betpro-page-hero__overlay {
+    background:
+        radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.72), transparent 28%),
+        linear-gradient(180deg, rgba(240, 253, 248, 0.9), rgba(234, 247, 243, 0.82)),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.08), transparent 34%, rgba(245, 158, 11, 0.08));
+}
+
+.betpro-page-hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.betpro-page-hero__copy {
+    max-width: 58rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.betpro-page-hero__copy .betpro-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-inline: auto;
+    border-color: rgba(20, 184, 166, 0.28);
+    background: rgba(20, 184, 166, 0.11);
+    color: #008f73;
+    font-size: 0.86rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.betpro-page-hero__copy .betpro-eyebrow::before {
+    content: "";
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 999px;
+    background: #00a982;
+}
+
+.betpro-page-hero__copy h1 {
+    max-width: none;
+    color: #132b27;
+    font-size: clamp(2.45rem, 4.4vw, 3.85rem);
+    line-height: 1.08;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.betpro-page-hero[data-page='services'],
+.betpro-page-hero[data-page='how-it-works'] {
+    min-height: clamp(260px, 27vw, 345px);
+}
+
+.betpro-page-hero__copy h1 span {
+    background: linear-gradient(90deg, #fff078 0%, #fbbf24 42%, #f97316 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.betpro-page-hero__copy p:not(.betpro-eyebrow) {
+    margin-inline: auto;
+    color: #4c6a64;
+    max-width: 48rem;
+    font-size: clamp(1.05rem, 1.7vw, 1.28rem);
+    line-height: 1.58;
+}

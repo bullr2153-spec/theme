@@ -1,0 +1,33 @@
+@layer base {
+  body.betpro-account-theme {
+    background:
+      radial-gradient(circle at top left, var(--page-tone-1), transparent 30%),
+      radial-gradient(circle at top right, var(--page-tone-2), transparent 24%),
+      radial-gradient(circle at 50% 30%, var(--page-tone-3), transparent 28%),
+      hsl(var(--background));
+    color: hsl(var(--foreground));
+    --betpro-admin-offset: 0px;
+    --betpro-banner-height: 0px;
+    --betpro-header-height: 72px;
+    --betpro-fixed-offset: calc(
+      var(--betpro-admin-offset) + var(--betpro-banner-height) + var(--betpro-header-height)
+    );
+    margin: 0;
+  }
+  body.betpro-account-theme #root {
+    min-height: 100vh;
+  }
+  body.betpro-account-theme .screen-reader-text {
+    position: absolute;
+    left: -9999px;
+  }
+  body.betpro-account-theme .betpro-site-banner {
+    top: var(--betpro-admin-offset);
+  }
+  body.betpro-account-theme .betpro-site-header {
+    top: calc(var(--betpro-admin-offset) + var(--betpro-banner-height));
+  }
+  body.admin-bar.betpro-account-theme {
+    --betpro-admin-offset: 32px;
+  }
+}
