@@ -32,7 +32,7 @@ if (! defined('ABSPATH')) {
             <div class="betpro-live-sales__intro">
                 <p class="betpro-eyebrow text-lg"><?php esc_html_e('Today\'s service snapshot', 'betpro-account'); ?></p>
                 <h2><?php esc_html_e('Clear progress for account setup and delivery.', 'betpro-account'); ?></h2>
-                <p class="text-lg"><?php esc_html_e('Simple numbers for today: how many accounts were delivered, how many are in ID check, and how many support chats are active.', 'betpro-account'); ?></p>
+                <p class="text-lg"><?php esc_html_e('Simple numbers for today: how many accounts were delivered, how many are in verification, and how many support chats are active.', 'betpro-account'); ?></p>
                 <div class="betpro-live-sales__meta">
                     <span class="text-lg"><?php esc_html_e('Daily service summary', 'betpro-account'); ?></span>
                     <span class="text-lg"><?php esc_html_e('Updated regularly', 'betpro-account'); ?></span>
@@ -45,9 +45,9 @@ if (! defined('ABSPATH')) {
                     <small><?php esc_html_e('Accounts delivered today', 'betpro-account'); ?></small>
                 </article>
                 <article class="betpro-live-sales__card">
-                    <span class="text-lg"><?php esc_html_e('In ID Check', 'betpro-account'); ?></span>
+                    <span class="text-lg"><?php esc_html_e('In Verification', 'betpro-account'); ?></span>
                     <strong>7</strong>
-                    <small><?php esc_html_e('ID checks currently in progress', 'betpro-account'); ?></small>
+                    <small><?php esc_html_e('Verifications currently in progress', 'betpro-account'); ?></small>
                 </article>
                 <article class="betpro-live-sales__card">
                     <span class="text-lg"><?php esc_html_e('Active support chats', 'betpro-account'); ?></span>
@@ -82,14 +82,14 @@ if (! defined('ABSPATH')) {
         <div class="betpro-section-heading betpro-reveal text-center max-w-2xl mx-auto mb-14" data-betpro-reveal>
             <p class="betpro-eyebrow text-lg"><?php esc_html_e('How It Works', 'betpro-account'); ?></p>
             <h2 class="text-3xl md:text-4xl font-extrabold mb-4"><?php esc_html_e('Get your verified BetPro account in 24-48 hours.', 'betpro-account'); ?></h2>
-            <p class="text-lg text-muted-foreground"><?php esc_html_e('We create the account, complete the ID check, and deliver it ready to use. No waiting in queues and no confusing steps.', 'betpro-account'); ?></p>
+            <p class="text-lg text-muted-foreground"><?php esc_html_e('We create the account, complete verification, and deliver it ready to use. No waiting in queues and no confusing steps.', 'betpro-account'); ?></p>
         </div>
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <?php
             $services = array(
                 array('icon' => 'fa-user-plus', 'title' => __('Create Account', 'betpro-account'), 'text' => __('Fresh registered account on BetPro. Tell us your details, we handle the registration.', 'betpro-account')),
                 array('icon' => 'fa-wallet', 'title' => __('Fund Your Account', 'betpro-account'), 'text' => __('Add money via crypto, bank transfer, Easypaisa, JazzCash, or other methods.', 'betpro-account')),
-                array('icon' => 'fa-id-card', 'title' => __('Complete ID Check', 'betpro-account'), 'text' => __('Share your documents and we guide each step. Most approvals are done in 24 hours.', 'betpro-account')),
+                array('icon' => 'fa-id-card', 'title' => __('Complete Verification', 'betpro-account'), 'text' => __('Share your documents and we guide each step. Most approvals are done in 24 hours.', 'betpro-account')),
                 array('icon' => 'fa-headset', 'title' => __('Get Support When Needed', 'betpro-account'), 'text' => __('WhatsApp support available. Help with account issues, limits, or replacements.', 'betpro-account')),
             );
             foreach ($services as $index => $service) :
@@ -103,7 +103,7 @@ if (! defined('ABSPATH')) {
             <?php endforeach; ?>
         </div>
         <div class="betpro-service-tags betpro-reveal" data-betpro-reveal>
-            <?php foreach (array('Accounts delivered in 24-48 hours', 'ID check completed and approved', 'Replacement guarantee', 'Live WhatsApp support', 'Multiple payment methods') as $tag) : ?>
+            <?php foreach (array('Accounts delivered in 24-48 hours', 'Verification completed and approved', 'Replacement guarantee', 'Live WhatsApp support', 'Multiple payment methods') as $tag) : ?>
                 <span class="text-lg"><?php echo esc_html($tag); ?></span>
             <?php endforeach; ?>
         </div>

@@ -17,20 +17,20 @@ $person_image = (string) ($args['person_image'] ?? '');
         <div class="grid gap-14 lg:grid-cols-2 lg:items-center">
             <div class="betpro-reveal" data-betpro-reveal>
                 <div class="betpro-eyebrow inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary mb-7">
-                    <?php esc_html_e('Verified BetPro accounts in Pakistan', 'betpro-account'); ?>
+                    <?php esc_html_e('BetPro ID in Pakistan', 'betpro-account'); ?>
                 </div>
                 <h1 class="text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight mb-6 leading-[1.08]">
-                    <span class="betpro-home-hero__line"><?php esc_html_e('Verified BetPro account', 'betpro-account'); ?></span>
-                    <span class="betpro-home-hero__line text-gradient-green"><?php esc_html_e('ready to use in 24-48 hours', 'betpro-account'); ?></span>
+                    <span class="betpro-home-hero__line"><?php esc_html_e('Buy Verified BetPro Account', 'betpro-account'); ?></span>
+                    <span class="betpro-home-hero__line text-gradient-green"><?php esc_html_e('or BetPro ID in Pakistan', 'betpro-account'); ?></span>
                 </h1>
                 <p class="text-2xl text-muted-foreground mb-9 leading-9 max-w-xl">
-                    <?php esc_html_e('We create your account, finish ID check, and send you a ready-to-use BetPro login with WhatsApp help. Simple process, no long wait.', 'betpro-account'); ?>
+                    <?php esc_html_e('We create your account, complete verification, and send you a ready-to-use BetPro login with WhatsApp help. Simple process, no long wait.', 'betpro-account'); ?>
                 </p>
                 <div class="betpro-home-hero__actions flex flex-col sm:flex-row gap-4 mb-8">
                     <?php betpro_account_render_button(betpro_account_whatsapp_url(), betpro_account_primary_cta_label(), 'primary', true); ?>
                 </div>
                 <div class="betpro-home-hero__proof grid gap-3 text-lg text-muted-foreground sm:grid-cols-2">
-                    <?php foreach (array('Ready BetPro login', 'Delivered in 24-48 hours', 'ID check help included', 'WhatsApp support available') as $proof) : ?>
+                    <?php foreach (array('Ready BetPro login', 'Delivered in 24-48 hours', 'Verification help included', 'WhatsApp support available') as $proof) : ?>
                         <span><i class="fa-solid fa-check" aria-hidden="true"></i><?php echo esc_html($proof); ?></span>
                     <?php endforeach; ?>
                 </div>
